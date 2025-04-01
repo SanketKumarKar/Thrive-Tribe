@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Thrive Tribe</title>
+    <style>
+        body {
+            font-family: 'Pacifico', cursive;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,6 +20,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#test">Free Mental Health Test</a></li>
                 <li><a href="#premium">Premium Features</a></li>
+                <li><a href="#wallet">Web3 Wallet Connection</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
             </ul>
         </nav>
     </header>
@@ -60,6 +68,22 @@
             <li>💎 One-on-One Therapy – Sessions with certified therapists.</li>
             <li>💎 Personal Tracker – Logs emotions, activities, and progress.</li>
         </ul>
+    </section>
+
+    <section id="wallet">
+        <h2>Web3 Wallet Connection</h2>
+        <p>Connect your MetaMask or WalletConnect for secure login and payments.</p>
+        <button id="connectMetaMask">Connect MetaMask</button>
+        <button id="connectWalletConnect">Connect WalletConnect</button>
+    </section>
+
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+        <p>Track your mood progress over time and book appointments with therapists.</p>
+        <div id="moodProgress">
+            <!-- Mood progress tracking will be displayed here -->
+        </div>
+        <button id="bookAppointment">Book Appointment</button>
     </section>
 
     <footer>

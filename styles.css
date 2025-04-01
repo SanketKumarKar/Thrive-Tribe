@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Pacifico', cursive;
     margin: 0;
     padding: 0;
 }
@@ -37,4 +37,51 @@ button:hover {
 
 .testimonials {
     margin-top: 20px;
+}
+
+/* Styles for Web3 Wallet Connection section */
+#wallet {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#wallet button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#wallet button:hover {
+    background-color: #e68900;
+}
+
+/* Styles for Dashboard section */
+#dashboard {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#dashboard #moodProgress {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#dashboard button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#dashboard button:hover {
+    background-color: #1976D2;
 }
