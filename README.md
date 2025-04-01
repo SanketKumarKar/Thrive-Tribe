@@ -74,8 +74,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Special thanks to all contributors and mental health professionals who provide valuable resources for mental well-being.
 
 ---
-
-Feel free to modify this README file as necessary to suit your project's needs!
-
-Sources
-
