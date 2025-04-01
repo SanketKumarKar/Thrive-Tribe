@@ -122,3 +122,41 @@ button:hover {
         opacity: 1;
     }
 }
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none; /* Hide navigation bar initially */
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
