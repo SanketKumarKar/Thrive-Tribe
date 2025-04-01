@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Thrive Tribe</title>
+</head>
+<body>
+    <header>
+        <h1>Thrive Tribe</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#test">Free Mental Health Test</a></li>
+                <li><a href="#premium">Premium Features</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Thrive Tribe</h2>
+        <p>Your platform for mental wellness and support.</p>
+        <button id="startTestBtn">Start Free Test</button>
+        <div class="testimonials">
+            <h3>Testimonials</h3>
+            <p>"Thrive Tribe has changed my life!" - User A</p>
+            <p>"I feel more in control of my mental health." - User B</p>
+        </div>
+    </section>
+
+    <section id="test" style="display:none;">
+        <h2>Free Mental Health Test</h2>
+        <form id="mentalHealthTest">
+            <label for="stress">Rate your stress level (1-10):</label>
+            <input type="number" id="stress" name="stress" min="1" max="10" required>
+
+            <label for="anxiety">Rate your anxiety level (1-10):</label>
+            <input type="number" id="anxiety" name="anxiety" min="1" max="10" required>
+
+            <label for="mood">Rate your mood (1-10):</label>
+            <input type="number" id="mood" name="mood" min="1" max="10" required>
+
+            <button type="submit">Submit Test</button>
+        </form>
+
+        <div id="results" style="display:none;">
+            <h3>Your Results:</h3>
+            <p id="resultScore"></p>
+            <p id="personalizedTips"></p>
+        </div>
+    </section>
+
+    <section id="premium">
+        <h2>Premium Features</h2>
+        <ul>
+            <li>💎 Guided Meditation – Personalized meditation sessions.</li>
+            <li>💎 AI Companion – 24/7 AI-powered emotional support.</li>
+            <li>💎 Daily 5-Min Micro-Therapy – Short, science-backed therapy sessions.</li>
+            <li>💎 One-on-One Therapy – Sessions with certified therapists.</li>
+            <li>💎 Personal Tracker – Logs emotions, activities, and progress.</li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2025 Thrive Tribe. All rights reserved Savni.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
