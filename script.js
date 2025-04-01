@@ -62,5 +62,17 @@ document.querySelectorAll('nav ul li a').forEach(link => {
             section.style.display = 'none';
         });
         document.getElementById(targetId).style.display = 'block';
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' }); // Smooth scrolling
+    });
+});
+
+// Add animations for interactive elements
+document.querySelectorAll('button').forEach(button => {
+    button.addEventListener('mouseover', function() {
+        this.style.transform = 'scale(1.1)';
+        this.style.transition = 'transform 0.3s ease';
+    });
+    button.addEventListener('mouseout', function() {
+        this.style.transform = 'scale(1)';
     });
 });
