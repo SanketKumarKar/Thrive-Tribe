@@ -76,3 +76,20 @@ document.querySelectorAll('button').forEach(button => {
         this.style.transform = 'scale(1)';
     });
 });
+
+// Function to toggle the visibility of the navigation bar when the hamburger menu icon is clicked
+function toggleNav() {
+    const nav = document.querySelector('nav ul');
+    nav.classList.toggle('show');
+}
+
+// Add an event listener to the hamburger menu icon to call the toggle function when clicked
+document.querySelector('.hamburger-menu').addEventListener('click', toggleNav);
+
+// Add a class to the navigation bar to show or hide it based on the screen size
+window.addEventListener('resize', function() {
+    const nav = document.querySelector('nav ul');
+    if (window.innerWidth > 768) {
+        nav.classList.remove('show');
+    }
+});
