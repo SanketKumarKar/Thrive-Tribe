@@ -123,7 +123,6 @@ button:hover {
     }
 }
 
-/* P142d */
 .hamburger-menu {
     display: none;
     flex-direction: column;
@@ -137,7 +136,6 @@ button:hover {
     width: 25px;
 }
 
-/* P97bf */
 .mobile-nav {
     display: none;
     background-color: #1e90ff;
@@ -165,7 +163,6 @@ button:hover {
     padding: 10px;
 }
 
-/* Pc747 */
 @media (max-width: 768px) {
     nav ul {
         display: none;
