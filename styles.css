@@ -25,6 +25,13 @@ nav ul {
     list-style-type: none;
     display: flex;
     gap: 15px;
+    transition: max-height 0.3s ease; /* Smooth transition effect */
+    max-height: 0; /* Initially hide the menu */
+    overflow: hidden; /* Hide the overflow */
+}
+
+nav ul.show {
+    max-height: 500px; /* Show the menu */
 }
 
 nav ul li {
