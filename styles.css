@@ -2,37 +2,62 @@ body {
     font-family: 'Gill Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark text color for better contrast */
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #1e90ff; /* Dodger blue */
     color: white;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #87cefa; /* Light sky blue */
 }
 
 section {
     padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #1e90ff; /* Dodger blue */
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #1c86ee; /* Slightly darker blue */
 }
 
 .testimonials {
@@ -53,6 +78,7 @@ button:hover {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 #wallet button:hover {
@@ -80,8 +106,19 @@ button:hover {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 #dashboard button:hover {
     background-color: #1976D2;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
